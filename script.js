@@ -43,7 +43,7 @@ const profiles = {
     phone: '+447974039529',
     location: 'Manchester, United Kingdom',
     address: 'Business Management Suite, Barton Dock Road, M17 8AA',
-    website: '',
+    website: 'N/A',
     initials: 'CK',
     avatarUrl: ''
   }
