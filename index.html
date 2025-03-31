@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page - NFC Triggered</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div class="avatar-container">
+        <div class="avatar" id="profile-avatar">
+          <div class="avatar-initials" id="avatar-initials">JD</div>
+          <img id="avatar-image" class="hidden" src="" alt="Profile Picture">
+        </div>
+        <label for="profile-image-upload" class="upload-button">
+          <i class="fas fa-camera"></i>
+        </label>
+        <input id="profile-image-upload" type="file" accept="image/*" hidden>
+      </div>
+      
+      <div class="profile-info">
+        <h1 class="profile-name">John Doe</h1>
+        <p class="profile-title">Product Manager</p>
+        <p class="profile-email">john.doe@example.com</p>
+        <p class="profile-location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+      </div>
+    </div>
+
+    <!-- Contact Actions -->
+    <div class="contact-actions">
+      <button class="action-button" onclick="showToast('Message sent!')">
+        <i class="fas fa-comment"></i>
+        <span>Message</span>
+      </button>
+      <button class="action-button" onclick="showToast('Calling...')">
+        <i class="fas fa-phone"></i>
+        <span>Call</span>
+      </button>
+      <button class="action-button" onclick="showToast('Video call initiated!')">
+        <i class="fas fa-video"></i>
+        <span>Video</span>
+      </button>
+      <button class="action-button" onclick="window.location.href='mailto:john.doe@example.com'">
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+      </button>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <div class="detail-item">
+        <i class="fas fa-phone"></i>
+        <span>+1 (555) 123-4567</span>
+      </div>
+      <div class="detail-item">
+        <i class="fas fa-envelope"></i>
+        <span>john.doe@example.com</span>
+      </div>
+      <div class="detail-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>123 Tech Street, San Francisco, CA</span>
+      </div>
+      <div class="detail-item">
+        <i class="fas fa-globe"></i>
+        <a href="https://example.com" target="_blank">example.com</a>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+      <span id="toast-message"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
