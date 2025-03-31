@@ -58,7 +58,7 @@ const profiles = {
     address: 'Business Management Suite, Barton Dock Road, M17 8AA',
     website: 'N/A',
     initials: 'JP',
-    avatarUrl: 'images/me.jpeg'
+    avatarUrl: '/images/me.jpeg'
   }
 };
 
