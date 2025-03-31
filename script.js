@@ -47,6 +47,19 @@ const profiles = {
     initials: 'CK',
     avatarUrl: ''
   }
+
+  ,
+  'nfc-id-4': {
+    name: 'Joseph Popoola',
+    title: 'Security Officer/Tech Enthusiast',
+    email: 'popcyquote@gmail.com',
+    phone: '+447882225280',
+    location: 'Manchester, United Kingdom',
+    address: 'Business Management Suite, Barton Dock Road, M17 8AA',
+    website: 'N/A',
+    initials: 'JP',
+    avatarUrl: 'images/me.jpeg'
+  }
 };
 
 // Event tracking storage
@@ -62,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (userId) {
     loadProfile(userId);
   } else {
-    loadProfile('nfc-id-1');
+    loadProfile('nfc-id-4');
   }
 
   // loadProfile('nfc-id-2');
